@@ -1,68 +1,49 @@
-* {
-    font-family: 'Ubuntu', sans-serif;
-    padding: 0;
-    margin: 0;
-}
-.container {
-    display: flex;
-    min-height: 100vh;
-}
-.sidebar {
-    background-color: #111827;
-    width: 260px;
-    padding: 24px;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-}
-.icon-img {
-    width: 30px;
-    height: 30px;
-}
-.full-img {
-    width: 190px;
-    height: 120px;
-}
-.sidebar .description-header {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-}
-.sidebar a {
+li {
+    list-style: none;
+    margin: 20px 0 20px 0;
+  }
+
+  a {
     text-decoration: none;
-}
-.sidebar .header .list-item {
+  }
+  .icon-img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  .list-item {
+    margin-top: -25px;
+  }
+  .list-item li a {
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 12px 10px;
+    padding: 5px 10px;
     border-radius: 8px;
-    height: 40px;
+    width: 200px;
     box-sizing: border-box;
-}
-.sidebar .header .list-item .icon {
-    margin-right: 12px;
-}
-.sidebar .header .illustration {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    margin: 10px 0 22px 0;
-    box-sizing: border-box;
-}
-.sidebar .main .list-item .description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
-}
-.main {
-    background-color: #eeee;
-    flex-grow: 1;
-}
+  }
+  .list-item li a:hover {
+    background-color: red;
+    border-radius: 8px;
+  }
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    margin-left: -300px;
+    transition: 0.4s;
+  }
+
+  .active-main-content {
+    margin-left: 250px;
+  }
+
+  .active-sidebar {
+    margin-left: 0;
+  }
+
+  #main-content {
+    transition: 0.4s;
+  }
