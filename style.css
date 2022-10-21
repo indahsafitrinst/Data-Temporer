@@ -104,6 +104,8 @@ li {
     background-color: red;
     border-radius: 8px;
   }
+
+  /* Side Bar */
   .sidebar {
     width: 250px;
     height: 100vh;
@@ -111,7 +113,9 @@ li {
     margin-left: -300px;
     transition: 0.4s;
   }
-
+.menu-sidebar {
+  margin-left: 6px;
+}
   .active-main-content {
     margin-left: 250px;
   }
