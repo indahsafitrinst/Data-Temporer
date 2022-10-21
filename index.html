@@ -79,7 +79,9 @@
                       <th> No </th>
                       <th> Site ID </th>
                       <th> STO</th>
-                      <th> Data OLT</th>
+                      <th> OLT</th>
+                      <th> Port OLT</th>
+                      <th> Manjemen Core</th>
                       <th> Jenis Kabel </th>
                       <th> Keterangan </th>
                       <th> Aksi </th>
@@ -93,6 +95,8 @@
                       <td>Lorem ipsum dolor sit amet.</td>
                       <td>Lorem ipsum dolor sit amet.</td>
                       <td>Lorem ipsum dolor sit amet.</td>
+                      <td>Lorem ipsum dolor sit amet.</td>
+                      <td>Lorem ipsum dolor sit amet.</td>
                       <td width="100px" height="40px">
                         <button type="button" class="button edit"><i class="bi bi-pencil-square"></i></button>
                         <button type="button" class="button hapus"><i class="bi bi-trash3"></i></i></button>
@@ -100,6 +104,8 @@
                     </tr>
                     <tr>
                       <td>2</td>
+                      <td>Lorem ipsum dolor sit amet.</td>
+                      <td>Lorem ipsum dolor sit amet.</td>
                       <td>Lorem ipsum dolor sit amet.</td>
                       <td>Lorem ipsum dolor sit amet.</td>
                       <td>Lorem ipsum dolor sit amet.</td>
@@ -118,53 +124,53 @@
     
 
     <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="form-group">
-            <label> Site ID </label>
-            <input type="text" name="site_id" class="form-control">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="form-group">
-            <label> STO </label>
-            <input type="text" name="sto" class="form-control">
+          <div class="modal-body">
+            <div class="form-group">
+              <label> Site ID </label>
+              <input type="text" name="site_id" class="form-control">
+            </div>
+            <div class="form-group">
+              <label> STO </label>
+              <input type="text" name="sto" class="form-control">
+            </div>
+            <div class="form-group">
+              <label> OLT </label>
+              <input type="text" name="olt" class="form-control">
+            </div>
+            <div class="form-group">
+              <label> Port OLT </label>
+              <input type="text" name="port_olt" class="form-control">
+            </div>
+            <div class="form-group">
+              <label> Manajemen Core </label>
+              <input type="text" name="manajemen_core" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1"> Jenis Kabel </label>
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option value="1">KU</option>
+                  <option value="2">KT</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label> Keterangan </label>
+              <textarea class="form-control" placeholder="Keterangan" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
           </div>
-          <div class="form-group">
-            <label> OLT </label>
-            <input type="text" name="data_olt" class="form-control">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
-          <div class="form-group">
-            <label> Port OLT </label>
-            <input type="text" name="data_olt" class="form-control">
-          </div>
-          <div class="form-group">
-            <label> Manajemen Core </label>
-            <input type="text" name="data_olt" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1"> Jenis Kabel </label>
-            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                <option value="1">KU</option>
-                <option value="2">KT</option>
-              </select>
-          </div>
-          <div class="form-group">
-            <label> Keterangan </label>
-            <textarea class="form-control" placeholder="Keterangan" id="floatingTextarea2" style="height: 100px"></textarea>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
-  </div>
 
     <!--footer-->
     <footer class="footer mt-5 text-center">
